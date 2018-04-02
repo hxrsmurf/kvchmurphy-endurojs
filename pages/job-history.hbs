@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<!--
+Synchronous by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	{{>header}}
+	<body>
+		<div id="wrapper">
+		<!-- Header -->
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="9u skel-cell-important">
+							<section id="content" >
+								<header>
+									<h2>Job History</h2>
+								</header>
+								{{#each job}}
+								<font size="4">
+									<strong>
+										{{company}}
+									</strong>
+								</font>
+								{{start_date}} {{end_date}}
+								</br>
+								{{job_title}}
+								<p>
+									{{#each duties}}
+									<li>
+										{{duty}}
+									</li>
+									{{/each}}
+								</p>
+								<hr>
+								{{/each}}
+							</section>
+						</div>
+					{{>sidebar}}                                    
+					</div>
+				</div>
+			</div>
+		{{>footer}}
+	</div>
+	</body>
+</html>
+

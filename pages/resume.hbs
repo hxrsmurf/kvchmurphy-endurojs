@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<!--
+Synchronous by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	{{>header}}
+	<body>
+		<div id="wrapper">
+			<!-- Header -->
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="9u skel-cell-important">
+							<section id="content" >
+								<header>
+									<h2>Resume</h2>
+								</header>
+								{{#with post}}
+								<p>
+									<a href="{{doc}}">DOC</a> |
+									<a href="{{pdf}}">PDF</a> |
+									<a href="{{odt}}">ODT</a>
+								</p>
+									<iframe src="{{pdf}}" width="800" height="600"></iframe>
+								<p>
+									Last updated on {{last_modified_date}} {{last_modified_time}}
+								</p>
+								{{/with}}
+							</section>
+						</div>
+					{{>sidebar}}                                    
+				</div>
+				</div>
+			</div>
+			{{>footer}}
+		</div>
+	</body>
+</html>

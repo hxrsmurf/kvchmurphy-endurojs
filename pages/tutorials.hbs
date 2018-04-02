@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<!--
+Synchronous by TEMPLATED
+templated.co @templatedco
+Released for free under the Creative Commons Attribution 3.0 license (templated.co/license)
+-->
+<html>
+	{{>header}}
+	<body>
+		<div id="wrapper">
+			<!-- Header -->
+			<div id="page">
+				<div class="container">
+					<div class="row">
+						<div class="9u skel-cell-important">
+							<section id="content" >
+								<header>
+									<h2>Tutorials</h2>
+								</header>
+								{{#with post}}
+								<p>
+									{{body}}
+								</p>
+								{{/with}}
+								{{#each youtube}}
+								<font size=4>
+									<p>
+										<strong>
+											{{title}}
+										</strong>
+										</br>
+										</br>
+										<iframe src="{{url}}" width="800" height="600" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+									</p>
+								</font>
+								{{/each}}
+							</section>
+						</div>
+					{{>sidebar}}                                   
+					</div>
+				</div>
+			</div>
+			{{>footer}}
+		</div>
+	</body>
+</html>
